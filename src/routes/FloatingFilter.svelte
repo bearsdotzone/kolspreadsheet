@@ -3,7 +3,7 @@
 	import { all_skills } from './SkillsOut';
 
 	const list_of_tags: Set<string> = new Set(all_skills.flatMap((i) => i.tags).toSorted());
-	
+
 	export let formData: SkillFilter;
 
 	function checkAll() {
@@ -16,6 +16,11 @@
 		for (let i = 0; i < elements.length; i++) {
 			formData.tags[elements[i].getAttribute('name') ?? ''] = true;
 		}
+
+		elements = document.getElementsByClassName('checkbox-filter-classes');
+		for (let i = 0; i < elements.length; i++) {
+			formData.class[elements[i].getAttribute('name') ?? ''] = true;
+		}
 	}
 
 	function uncheckAll() {
@@ -27,6 +32,11 @@
 		elements = document.getElementsByClassName('checkbox-filter-tags');
 		for (let i = 0; i < elements.length; i++) {
 			formData.tags[elements[i].getAttribute('name') ?? ''] = false;
+		}
+
+		elements = document.getElementsByClassName('checkbox-filter-classes');
+		for (let i = 0; i < elements.length; i++) {
+			formData.class[elements[i].getAttribute('name') ?? ''] = false;
 		}
 	}
 
