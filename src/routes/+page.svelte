@@ -155,6 +155,8 @@
 										<div class="unchecked-box">&#x2610;</div>
 									{/if}
 								</td>
+							{:else if field[1] === SkillFields.TAGS}
+								<td title={a[field[1]].toString()} style="overflow: hidden; max-width: 10em">{a[field[1]]}</td>
 							{:else}
 								<td>{a[field[1]]}</td>
 							{/if}
