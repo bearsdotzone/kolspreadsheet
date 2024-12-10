@@ -106,7 +106,7 @@
 <svelte:head>
 	<title>Bears' KoL Perms Tracker</title>
 	<meta name="description" content="Bears' KoL Perms Tracker" />
-	<meta name="og:image" content="/favicon.png" />
+	<meta name="og:image" content="favicon.png" />
 </svelte:head>
 
 <section>
