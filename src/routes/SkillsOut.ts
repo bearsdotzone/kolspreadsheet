@@ -10,7 +10,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Cannelloni Cocoon',
@@ -21,7 +21,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Pastamastery',
@@ -32,7 +32,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Advanced Cocktailcrafting',
@@ -43,7 +43,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Ode to Booze',
@@ -54,7 +54,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Smooth Movements',
@@ -65,7 +65,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Sonata of Sneakiness',
@@ -76,7 +76,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Advanced Saucecrafting',
@@ -87,7 +87,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Saucemaven',
@@ -98,7 +98,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Way of Sauce',
@@ -109,7 +109,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Bowl Full of Jelly',
@@ -120,7 +120,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Eye and a Twist',
@@ -131,7 +131,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Grab a Cold One',
@@ -142,7 +142,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Spaghetti Breakfast',
@@ -153,7 +153,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Lock Picking',
@@ -164,7 +164,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Mad Looting Skillz',
@@ -175,7 +175,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Fat Leon's Phat Loot Lyric",
@@ -186,7 +186,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Amphibian Sympathy',
@@ -197,7 +197,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Super-Advanced Meatsmithing',
@@ -208,7 +208,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Carlweather's Cantata of Confrontation",
@@ -219,7 +219,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Leash of Linguini',
@@ -230,7 +230,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Empathy of the Newt',
@@ -241,7 +241,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Superhuman Cocktailcrafting',
@@ -252,7 +252,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Transcendental Noodlecraft',
@@ -263,7 +263,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Long View',
@@ -274,7 +274,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Hide of the Walrus',
@@ -285,7 +285,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Brain Games',
@@ -296,7 +296,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['turns', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Torso Awareness',
@@ -307,7 +307,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Patient Smile',
@@ -318,7 +318,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Wry Smile',
@@ -329,7 +329,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Knowing Smile',
@@ -340,7 +340,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Aloysius' Antiphon of Aptitude",
@@ -351,7 +351,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Dimples, How Merry!',
@@ -362,7 +362,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: "Drescher's Annoying Noise",
@@ -373,7 +373,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Claws of the Walrus',
@@ -384,7 +384,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Ur-Kel's Aria of Annoyance",
@@ -395,7 +395,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Ancient Crymbo Lore',
@@ -406,7 +406,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['xp', 'tierlist'],
-		last_available: 2021
+		year: 2021
 	},
 	{
 		name: 'Powers of Observatiogn',
@@ -417,7 +417,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: '20/20 Vision',
@@ -428,7 +428,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Singer's Faithful Ocelot",
@@ -439,7 +439,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Thief Among the Honorable',
@@ -450,7 +450,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Natural Born Scrabbler',
@@ -461,7 +461,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Bind Spice Ghost',
@@ -472,7 +472,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Sensitive Fingers',
@@ -483,7 +483,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Master Accordion Master Thief',
@@ -494,7 +494,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Always Never Not Guzzling',
@@ -505,7 +505,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['item', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Curse of Weaksauce',
@@ -516,7 +516,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Itchy Curse Finger',
@@ -527,7 +527,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Tao of the Terrapin',
@@ -538,7 +538,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Moxious Madrigal',
@@ -549,7 +549,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Saucestorm',
@@ -560,7 +560,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Stuffed Mortar Shell',
@@ -571,7 +571,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Skin of the Leatherback',
@@ -582,7 +582,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Tongue of the Walrus',
@@ -593,7 +593,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Conspiratorial Whispers',
@@ -604,7 +604,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Astral Shell',
@@ -615,7 +615,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Ghostly Shell',
@@ -626,7 +626,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Elemental Saucesphere',
@@ -637,7 +637,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Subtle and Quick to Anger',
@@ -648,7 +648,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Master Saucier',
@@ -659,7 +659,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Slimy Sinews',
@@ -670,7 +670,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Spirit of Ravioli',
@@ -681,7 +681,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Shadow Noodles',
@@ -692,7 +692,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Lunging Thrust-Smack',
@@ -703,7 +703,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Entangling Noodles',
@@ -714,7 +714,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Hero of the Half-Shell',
@@ -725,7 +725,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Abs of Tin',
@@ -736,7 +736,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Cold-Blooded Fearlessness',
@@ -747,7 +747,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Rage of the Raindeer',
@@ -758,7 +758,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Diminished Gag Reflex',
@@ -769,7 +769,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Tolerance of the Kitchen',
@@ -780,7 +780,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Heart of Polyester',
@@ -791,7 +791,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Shield of the Pastalord',
@@ -802,7 +802,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Splashdance',
@@ -813,7 +813,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Saucy Salve',
@@ -824,7 +824,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Power Ballad of the Arrowsmith',
@@ -835,7 +835,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Jalapeño Saucesphere',
@@ -846,7 +846,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Irrepressible Spunk',
@@ -857,7 +857,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Saucegeyser',
@@ -868,7 +868,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Gnomish Hardigness',
@@ -879,7 +879,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Double-Fisted Skull Smashing',
@@ -890,7 +890,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Song of Sauce',
@@ -901,7 +901,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Song of the North',
@@ -912,7 +912,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Shell Up',
@@ -923,7 +923,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Sauceshell',
@@ -934,7 +934,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Scarysauce',
@@ -945,7 +945,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Club Earth',
@@ -956,7 +956,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Disco Fever',
@@ -967,7 +967,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Northern Exposure',
@@ -978,7 +978,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Brawnee's Anthem of Absorption",
@@ -989,7 +989,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Reptilian Fortitude',
@@ -1000,7 +1000,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Psalm of Pointiness',
@@ -1011,7 +1011,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Spiky Shell',
@@ -1022,7 +1022,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Stiff Upper Lip',
@@ -1033,7 +1033,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Northern Explosion',
@@ -1044,7 +1044,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Disco Smirk',
@@ -1055,7 +1055,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['combat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Visit your Favorite Bird',
@@ -1066,7 +1066,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['misc', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Mariachi Memory',
@@ -1077,7 +1077,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'CLEESH',
@@ -1088,7 +1088,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Dead Nostrils',
@@ -1099,7 +1099,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Flavour of Magic',
@@ -1110,7 +1110,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Thick-skinned',
@@ -1121,7 +1121,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Magical Mojomuscular Melody',
@@ -1132,7 +1132,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Wisdom of the Elder Tortoises',
@@ -1143,7 +1143,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Slimy Synapses',
@@ -1154,7 +1154,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Marginally Insane',
@@ -1165,7 +1165,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Blood Sugar Sauce Magic',
@@ -1176,7 +1176,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Cosmic Ugnderstanding',
@@ -1187,7 +1187,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'The Polka of Plenty',
@@ -1198,7 +1198,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Nimble Fingers',
@@ -1209,7 +1209,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Inner Sauce',
@@ -1220,7 +1220,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Five Finger Discount',
@@ -1231,7 +1231,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Expert Panhandling',
@@ -1242,7 +1242,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Gnefarious Pickpocketing',
@@ -1253,7 +1253,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Disco Leer',
@@ -1264,7 +1264,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Thrift and Grift',
@@ -1275,7 +1275,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Musk of the Moose',
@@ -1286,7 +1286,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['misc', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Bind Lasagmbie',
@@ -1297,7 +1297,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Springy Fusili',
@@ -1308,7 +1308,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Overdeveloped Sense of Self Preservation',
@@ -1319,7 +1319,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Slimy Shoulders',
@@ -1330,7 +1330,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Cletus's Canticle of Celerity",
@@ -1341,7 +1341,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Suspicious Gaze',
@@ -1352,7 +1352,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Walberg's Dim Bulb",
@@ -1363,7 +1363,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Song of Slowness',
@@ -1374,7 +1374,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Bind Angel Hair Wisp',
@@ -1385,7 +1385,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Blessing of the Storm Tortoise',
@@ -1396,7 +1396,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['mp', 'init', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Ambidextrous Funkslinging',
@@ -1407,7 +1407,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Icy Glare',
@@ -1418,7 +1418,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Dirge of Dreadfulness',
@@ -1429,7 +1429,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Snarl of the Timberwolf',
@@ -1440,7 +1440,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Testudinal Teachings',
@@ -1451,7 +1451,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Disco Nap',
@@ -1462,7 +1462,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Adventurer of Leisure',
@@ -1473,7 +1473,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Splattersmash',
@@ -1484,7 +1484,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Pride of the Puffin',
@@ -1495,7 +1495,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['xp', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Song of Bravado',
@@ -1506,7 +1506,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Stevedave's Shanty of Superiority",
@@ -1517,7 +1517,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Impetuous Sauciness',
@@ -1528,7 +1528,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Pulverize',
@@ -1539,7 +1539,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['meat', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Armorcraftiness',
@@ -1550,7 +1550,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: "Long Winter's Nap",
@@ -1561,7 +1561,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Chubby and Plump',
@@ -1572,7 +1572,7 @@ export const all_skills: Skill[] = [
 		sc: false,
 		hc: false,
 		tags: ['marginal', 'tierlist'],
-		last_available: 2020
+		year: 2020
 	},
 	{
 		name: 'Pizza Lover',
@@ -1583,7 +1583,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['turns', 'evergreen'],
-		last_available: null
+		year: null
 	},
 	{
 		name: 'Old-School Cocktailcrafting',
@@ -1594,7 +1594,7 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['marginal'],
-		last_available: 2023
+		year: 2023
 	},
 	{
 		name: 'Elf Guard Cooking',
@@ -1605,6 +1605,6 @@ export const all_skills: Skill[] = [
 		sc: true,
 		hc: true,
 		tags: ['marginal'],
-		last_available: 2023
+		year: 2023
 	}
 ];
