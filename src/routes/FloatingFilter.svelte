@@ -146,7 +146,7 @@
         background-color: var(--color-overlay0);
         top: 0;
         right: 0;
-        height: 100%;
+        height: calc(100% - var(--spacing) * 2);
         position: fixed;
         padding: calc(var(--spacing));
         width: calc(10vw - 2 * var(--spacing));
