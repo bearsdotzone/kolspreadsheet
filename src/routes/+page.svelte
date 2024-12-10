@@ -146,7 +146,7 @@
 					<tr>
 						<td>{index + 1}</td>
 						{#each Object.entries(SkillFields) as field}
-							{#if field[1] === SkillFields.SC_PERMED || field[1] === SkillFields.HC_PERMED}
+							{#if field[1] === SkillFields.SC || field[1] === SkillFields.HC}
 								<td>
 									<!--									<input type="checkbox" disabled checked={a[field[1]]}>-->
 									{#if a[field[1]]}
