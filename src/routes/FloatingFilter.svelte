@@ -92,7 +92,7 @@
 					<div>
 						<input type="checkbox" name={skillSource[0]} class="checkbox-filter-sources"
 									 bind:checked={formData.source[skillSource[0]]}>
-						<label for={skillSource[0]}>{skillSource[0]}</label>
+						<label for={skillSource[0]}>{skillSource[1]}</label>
 					</div>
 				{/each}
 			</div>
@@ -110,7 +110,7 @@
 					<div>
 						<input type="checkbox" name={classVal[0]} class="checkbox-filter-classes"
 									 bind:checked={formData.class[classVal[0]]}>
-						<label for={classVal[0]}>{classVal[0]}</label>
+						<label for={classVal[0]}>{classVal[1]}</label>
 					</div>
 				{/each}
 			</div>
@@ -128,6 +128,12 @@
 					<div>
 						<input type="checkbox" name={tag} class="checkbox-filter-tags" bind:checked={formData.tags[tag]}>
 						<label for={tag}>{tag}</label>
+						<a
+							on:click={() => {
+							setAllGroup(SkillFields.TAGS, false);
+						formData.tags[tag] = true;
+						}}>[only]
+						</a>
 					</div>
 				{/each}
 			</div>
@@ -137,12 +143,18 @@
 
 <style>
     .floating-filter {
-        background-color: #ff3e00;
-        bottom: 0;
+        background-color: var(--color-overlay0);
+        top: 0;
         right: 0;
-        height: 100vh;
+        height: 100%;
         position: fixed;
-        width: 10%;
+        padding: calc(var(--spacing));
+        width: calc(10vw - 2 * var(--spacing));
+        overflow: scroll;
+    }
+
+    .floating-filter::-webkit-scrollbar {
+        display: none;
     }
 
     .group-heading {
@@ -151,5 +163,9 @@
 
     .group-member {
         margin-left: 10px;
+    }
+
+    button {
+        margin: 0;
     }
 </style>
