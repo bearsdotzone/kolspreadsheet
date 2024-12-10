@@ -26,7 +26,7 @@ export enum SkillFields {
 	SC = 'sc',
 	HC = 'hc',
 	TAGS = 'tags',
-	LAST_AVAILABLE = 'last_available'
+	YEAR = 'year'
 }
 
 export type Skill = {
@@ -38,7 +38,7 @@ export type Skill = {
 	sc: boolean;
 	hc: boolean;
 	tags: string[];
-	last_available: number | null;
+	year: number | null;
 };
 
 export type SkillFilter = {
@@ -52,7 +52,7 @@ export type SkillFilter = {
 	sc: boolean;
 	hc: boolean;
 	tags: { [key: string]: boolean };
-	last_available: number[];
+	year: number[];
 	sort_field: SkillFields;
 	sort_descending: boolean;
 };
@@ -108,7 +108,7 @@ export const filterClassNone: SkillFilter = {
 	level: [],
 	hc: true,
 	sc: true,
-	last_available: [],
+	year: [],
 	tags: {
 		combat: true,
 		evergreen: true,

@@ -26,7 +26,7 @@
 		level: [],
 		hc_permed: true,
 		sc_permed: true,
-		last_available: [],
+		year: [],
 		tags: {
 			combat: true,
 			evergreen: true,
