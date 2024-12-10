@@ -23,8 +23,8 @@ export enum SkillFields {
 	SOURCE = 'source',
 	CLASS = 'class',
 	LEVEL = 'level',
-	SC_PERMED = 'sc_permed',
-	HC_PERMED = 'hc_permed',
+	SC = 'sc',
+	HC = 'hc',
 	TAGS = 'tags',
 	LAST_AVAILABLE = 'last_available'
 }
@@ -35,8 +35,8 @@ export type Skill = {
 	source: SkillSource;
 	class: Classes | null;
 	level: number | null;
-	sc_permed: boolean;
-	hc_permed: boolean;
+	sc: boolean;
+	hc: boolean;
 	tags: string[];
 	last_available: number | null;
 };
@@ -49,8 +49,8 @@ export type SkillFilter = {
 	source: { [key: string]: boolean };
 	class: { [key: string]: boolean };
 	level: number[];
-	sc_permed: boolean;
-	hc_permed: boolean;
+	sc: boolean;
+	hc: boolean;
 	tags: { [key: string]: boolean };
 	last_available: number[];
 	sort_field: SkillFields;
@@ -106,8 +106,8 @@ export const filterClassNone: SkillFilter = {
 		ACCORDION_THIEF: false
 	},
 	level: [],
-	hc_permed: true,
-	sc_permed: true,
+	hc: true,
+	sc: true,
 	last_available: [],
 	tags: {
 		combat: true,
