@@ -1041,7 +1041,7 @@ export const all_skills: Skill[] = [
 		source: SkillSource.CLASS,
 		class: Classes.SEAL_CLUBBER,
 		level: 13,
-		sc: false,
+		sc: true,
 		hc: false,
 		tags: ['marginal', 'tierlist', 'evergreen'],
 		year: null
