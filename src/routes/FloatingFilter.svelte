@@ -6,6 +6,8 @@
 
 	export let formData: SkillFilter;
 
+	let hideContent = false;
+
 	function checkAll() {
 		let elements = document.getElementsByClassName('checkbox-filter-sources');
 		for (let i = 0; i < elements.length; i++) {
@@ -66,90 +68,102 @@
 </script>
 
 <div class="floating-filter">
-	<div>
-		<button on:click={() => {
-			checkAll()
-		}}>
-			All
-		</button>
-		<button on:click={() => {
-			uncheckAll()
-		}}>
-			None
+	<div class="expand">
+		<button on:click={() => {hideContent = !hideContent}}>
+			{#if hideContent}⫷{:else }⫸{/if}
 		</button>
 	</div>
-	<form>
-		<div>
-			<div class="group-heading">
-				<input type="checkbox" name="group-sources" class="checkbox-filter-sources"
-							 on:change={(x) => {
+	{#if !hideContent}
+		<div class="content">
+			<div>
+				<button on:click={() => {
+			checkAll()
+		}}>
+					All
+				</button>
+				<button on:click={() => {
+			uncheckAll()
+		}}>
+					None
+				</button>
+			</div>
+			<form>
+				<div>
+					<div class="group-heading">
+						<input type="checkbox" name="group-sources" class="checkbox-filter-sources"
+									 on:change={(x) => {
 								 setAllGroup(SkillFields.SOURCE, x.currentTarget.checked);
 							 }}>
-				<label for="group-sources">Sources</label>
-			</div>
-			<div class="group-member">
-				{#each Object.entries(SkillSource) as skillSource}
-					<div>
-						<input type="checkbox" name={skillSource[0]} class="checkbox-filter-sources"
-									 bind:checked={formData.source[skillSource[0]]}>
-						<label for={skillSource[0]}>{skillSource[1]}</label>
+						<label for="group-sources">Sources</label>
 					</div>
-				{/each}
-			</div>
-		</div>
-		<div>
-			<div class="group-heading">
-				<input type="checkbox" name="group-classes" class="checkbox-filter-classes"
-							 on:change={(x) => {
+					<div class="group-member">
+						{#each Object.entries(SkillSource) as skillSource}
+							<div>
+								<input type="checkbox" name={skillSource[0]} class="checkbox-filter-sources"
+											 bind:checked={formData.source[skillSource[0]]}>
+								<label for={skillSource[0]}>{skillSource[1]}</label>
+							</div>
+						{/each}
+					</div>
+				</div>
+				<div>
+					<div class="group-heading">
+						<input type="checkbox" name="group-classes" class="checkbox-filter-classes"
+									 on:change={(x) => {
 								 setAllGroup(SkillFields.CLASS, x.currentTarget.checked);
 							 }}>
-				<label for="group-sources">Classes</label>
-			</div>
-			<div class="group-member">
-				{#each Object.entries(Classes) as classVal}
-					<div>
-						<input type="checkbox" name={classVal[0]} class="checkbox-filter-classes"
-									 bind:checked={formData.class[classVal[0]]}>
-						<label for={classVal[0]}>{classVal[1]}</label>
+						<label for="group-sources">Classes</label>
 					</div>
-				{/each}
-			</div>
-		</div>
-		<div>
-			<div class="group-heading">
-				<input type="checkbox" name="group-tags" class="checkbox-filter-tags"
-							 on:change={(x) => {
+					<div class="group-member">
+						{#each Object.entries(Classes) as classVal}
+							<div>
+								<input type="checkbox" name={classVal[0]} class="checkbox-filter-classes"
+											 bind:checked={formData.class[classVal[0]]}>
+								<label for={classVal[0]}>{classVal[1]}</label>
+							</div>
+						{/each}
+					</div>
+				</div>
+				<div>
+					<div class="group-heading">
+						<input type="checkbox" name="group-tags" class="checkbox-filter-tags"
+									 on:change={(x) => {
 								 setAllGroup(SkillFields.TAGS, x.currentTarget.checked);
 							 }}>
-				<label for="group-sources">Tags</label>
-			</div>
-			<div class="group-member">
-				{#each list_of_tags as tag}
-					<div>
-						<input type="checkbox" name={tag} class="checkbox-filter-tags" bind:checked={formData.tags[tag]}>
-						<label for={tag}>{tag}</label>
-						<a
-							on:click={() => {
+						<label for="group-sources">Tags</label>
+					</div>
+					<div class="group-member">
+						{#each list_of_tags as tag}
+							<div>
+								<input type="checkbox" name={tag} class="checkbox-filter-tags" bind:checked={formData.tags[tag]}>
+								<label for={tag}>{tag}</label>
+								<button on:click={() => {
 							setAllGroup(SkillFields.TAGS, false);
 						formData.tags[tag] = true;
 						}}>[only]
-						</a>
+								</button>
+							</div>
+						{/each}
 					</div>
-				{/each}
-			</div>
+				</div>
+			</form>
 		</div>
-	</form>
+	{/if}
 </div>
 
 <style>
     .floating-filter {
         background-color: var(--color-overlay0);
-        top: 0;
-        right: 0;
-        height: calc(100% - var(--spacing) * 2);
-        position: fixed;
+        display: flex;
+        height: calc(100vh - var(--spacing) * 2);
         padding: calc(var(--spacing));
-        width: calc(10vw - 2 * var(--spacing));
+        position: sticky;
+        top: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
         overflow: scroll;
     }
 
@@ -165,7 +179,22 @@
         margin-left: 10px;
     }
 
+    .group-member button {
+        background-color: transparent;
+        border: none;
+        font-style: italic;
+        font-weight: normal;
+        text-decoration-line: underline;
+    }
+
     button {
         margin: 0;
+    }
+
+    .expand {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - var(--spacing) * 2);
+        justify-content: center;
     }
 </style>
