@@ -1,11 +1,5 @@
 <script lang="ts">
-	import {
-		Classes,
-		classFilterMap, type Skill,
-		SkillFields,
-		type SkillFilter,
-		SkillSource
-	} from './SkillType';
+	import { Classes, classFilterMap, type Skill, SkillFields, type SkillFilter, SkillSource } from './SkillType';
 	import { all_skills } from './SkillsOut';
 	import FloatingFilter from './FloatingFilter.svelte';
 
@@ -49,8 +43,6 @@
 			return formData.tags[tag];
 		}))
 			return false;
-		// if (skill.tags.every(tag => tag in formData.tags && !formData.tags[tag]))
-		// 	return false;
 		if (!formData.source[skill.source.toUpperCase().replaceAll(' ', '_')])
 			return false;
 		if (skill.class != null && !formData.class[skill.class.toUpperCase().replaceAll(' ', '_')])
@@ -67,23 +59,6 @@
 			return a[formData.sort_field] < b[formData.sort_field] ? (formData.sort_descending ? 1 : -1) : (formData.sort_descending ? -1 : 1);
 		}
 	}));
-
-	function setFilterToClass(setClass: string) {
-		for (let i in formData.tags) {
-			formData.tags[i] = true;
-		}
-
-		for (let i in formData.class) {
-			formData.class[i] = false;
-		}
-
-		for (let i in formData.source) {
-			formData.source[i] = false;
-		}
-
-		formData.class[setClass] = true;
-		formData.source['CLASS'] = true;
-	}
 
 	function setFilterToSource(source: string) {
 		for (let i in formData.tags) {
@@ -105,8 +80,8 @@
 
 <svelte:head>
 	<title>Bears' KoL Perms Tracker</title>
-	<meta name="description" content="Bears' KoL Perms Tracker" />
-	<meta name="og:image" content="favicon.png" />
+	<meta content="Bears' KoL Perms Tracker" name="description" />
+	<meta content="favicon.png" name="og:image" />
 </svelte:head>
 
 <section>
@@ -116,7 +91,6 @@
 			<tr>
 				<th colspan={Object.entries(SkillFields).length+1}>
 					{#each Object.entries(Classes) as classEntry}
-						<!--			<button onclick={() => setFilterToClass(classEntry[0])}>{classEntry[0]}</button>-->
 						<button onclick={() => formData = classFilterMap[classEntry[0]]}>{classEntry[1]}</button>
 					{/each}
 					{#each Object.entries(SkillSource) as source}
@@ -147,7 +121,6 @@
 					{#each Object.entries(SkillFields) as field}
 						{#if field[1] === SkillFields.SC || field[1] === SkillFields.HC}
 							<td>
-								<!--									<input type="checkbox" disabled checked={a[field[1]]}>-->
 								{#if a[field[1]]}
 									<div class="checked-box">&#x2611;</div>
 								{:else}
@@ -170,24 +143,20 @@
 
 <style>
     .content {
-        padding: var(--spacing);
-        /*width: calc(90% - 2 * var(--spacing));*/
-        min-height: 100%;
-        flex-grow: 1;
-        /*flex-shrink: 1;*/
-        overflow: scroll;
         display: flex;
+        flex-grow: 1;
+        min-height: 100%;
+        overflow: scroll;
+        padding: var(--spacing);
     }
 
     table {
-        /*border-collapse: collapse;*/
-        width: calc(100% + var(--spacing) * 2);
-        height: fit-content;
         border-spacing: 0;
+        height: fit-content;
+        width: calc(100% + var(--spacing) * 2);
     }
 
     td, th, tr {
-        /*outline: var(--color-overlay0) 1px solid;*/
         border-bottom: 1px solid var(--color-overlay0);
         border-right: 1px solid var(--color-overlay0);
         padding: calc(var(--spacing) / 2);
@@ -214,9 +183,9 @@
 
 
     section {
+        display: flex;
         min-height: 100%;
         width: 100%;
-        display: flex;
     }
 
     thead {
