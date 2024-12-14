@@ -24,8 +24,8 @@
 			ACCORDION_THIEF: true
 		},
 		level: [],
-		hc_permed: true,
-		sc_permed: true,
+		hc: true,
+		sc: true,
 		year: [],
 		tags: {
 			combat: true,
