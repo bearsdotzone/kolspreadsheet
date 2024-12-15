@@ -3,7 +3,7 @@
 	import { all_skills } from './SkillsOut';
 	import FloatingFilter from './FloatingFilter.svelte';
 
-	let formData: SkillFilter = $state({
+	let skillFilter: SkillFilter = $state({
 		name: '',
 		notes: '',
 		source: {
@@ -40,40 +40,40 @@
 
 	let working_skills: Skill[] = $derived(all_skills.filter((skill) => {
 		if (!skill.tags.some((tag) => {
-			return formData.tags[tag];
+			return skillFilter.tags[tag];
 		}))
 			return false;
-		if (!formData.source[skill.source.toUpperCase().replaceAll(' ', '_')])
+		if (!skillFilter.source[skill.source.toUpperCase().replaceAll(' ', '_')])
 			return false;
-		if (skill.class != null && !formData.class[skill.class.toUpperCase().replaceAll(' ', '_')])
+		if (skill.class != null && !skillFilter.class[skill.class.toUpperCase().replaceAll(' ', '_')])
 			return false;
 		return true;
 	}).sort((a, b) => {
-		if (a[formData.sort_field] == null && b[formData.sort_field] == null) {
+		if (a[skillFilter.sort_field] == null && b[skillFilter.sort_field] == null) {
 			return 0;
-		} else if (b[formData.sort_field] == null) {
-			return formData.sort_descending ? 1 : -1;
-		} else if (a[formData.sort_field] == null) {
-			return formData.sort_descending ? -1 : 1;
+		} else if (b[skillFilter.sort_field] == null) {
+			return skillFilter.sort_descending ? 1 : -1;
+		} else if (a[skillFilter.sort_field] == null) {
+			return skillFilter.sort_descending ? -1 : 1;
 		} else {
-			return a[formData.sort_field] < b[formData.sort_field] ? (formData.sort_descending ? 1 : -1) : (formData.sort_descending ? -1 : 1);
+			return a[skillFilter.sort_field] < b[skillFilter.sort_field] ? (skillFilter.sort_descending ? 1 : -1) : (skillFilter.sort_descending ? -1 : 1);
 		}
 	}));
 
 	function setFilterToSource(source: string) {
-		for (let i in formData.tags) {
-			formData.tags[i] = true;
+		for (let i in skillFilter.tags) {
+			skillFilter.tags[i] = true;
 		}
 
 		Object.keys(Classes).forEach(key => {
-			formData.class[key] = true;
+			skillFilter.class[key] = true;
 		});
 
-		for (let i in formData.source) {
-			formData.source[i] = false;
+		for (let i in skillFilter.source) {
+			skillFilter.source[i] = false;
 		}
 
-		formData.source[source] = true;
+		skillFilter.source[source] = true;
 	}
 
 </script>
@@ -91,7 +91,7 @@
 			<tr>
 				<th colspan={Object.entries(SkillFields).length+1}>
 					{#each Object.entries(Classes) as classEntry}
-						<button onclick={() => formData = classFilterMap[classEntry[0]]}>{classEntry[1]}</button>
+						<button onclick={() => skillFilter = classFilterMap[classEntry[0]]}>{classEntry[1]}</button>
 					{/each}
 					{#each Object.entries(SkillSource) as source}
 						<button onclick={() => setFilterToSource(source[0])}>{source[1]}</button>
@@ -102,12 +102,12 @@
 				<th>{working_skills.length}</th>
 				{#each Object.entries(SkillFields) as field}
 					<th onclick={() => {
-					if(formData.sort_field === field[1])
-						formData.sort_descending = !formData.sort_descending;
+					if(skillFilter.sort_field === field[1])
+						skillFilter.sort_descending = !skillFilter.sort_descending;
 					else
 						{
-							formData.sort_field = field[1];
-							formData.sort_descending = false;
+							skillFilter.sort_field = field[1];
+							skillFilter.sort_descending = false;
 						}
 				}
 				}>{field[1]}</th>
@@ -115,22 +115,22 @@
 			</tr>
 			</thead>
 			<tbody>
-			{#each working_skills as a, index}
+			{#each working_skills as skill, index}
 				<tr>
 					<td>{index + 1}</td>
 					{#each Object.entries(SkillFields) as field}
 						{#if field[1] === SkillFields.SC || field[1] === SkillFields.HC}
 							<td>
-								{#if a[field[1]]}
+								{#if skill[field[1]]}
 									<div class="checked-box">&#x2611;</div>
 								{:else}
 									<div class="unchecked-box">&#x2610;</div>
 								{/if}
 							</td>
 						{:else if field[1] === SkillFields.TAGS}
-							<td title={a[field[1]].toString()} style="overflow: hidden; max-width: 10em">{a[field[1]]}</td>
+							<td title={skill[field[1]].toString()} style="overflow: hidden; max-width: 10em">{skill[field[1]]}</td>
 						{:else}
-							<td>{a[field[1]]}</td>
+							<td>{skill[field[1]]}</td>
 						{/if}
 					{/each}
 				</tr>
@@ -138,7 +138,7 @@
 			</tbody>
 		</table>
 	</div>
-	<FloatingFilter bind:formData={formData} />
+	<FloatingFilter bind:skillFilter={skillFilter} />
 </section>
 
 <style>
@@ -180,7 +180,6 @@
         /* Apply a left border on the first <td> or <th> in a row */
         border-left: 1px solid var(--color-overlay0);
     }
-
 
     section {
         display: flex;
