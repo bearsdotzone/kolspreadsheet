@@ -1606,5 +1606,60 @@ export const all_skills: Skill[] = [
 		hc: true,
 		tags: ['marginal'],
 		year: 2023
+	},
+	{
+		name: 'Master Egg Hunter',
+		notes: '10% item drop / passive',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: false,
+		hc: false,
+		tags: ['item'],
+		year: 2024
+	},
+	{
+		name: 'Attract Snakes',
+		notes: '5% combat frequency / 10 turns / 50 MP',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: false,
+		hc: false,
+		tags: ['misc'],
+		year: 2024
+	},
+	{
+		name: 'Hide from Seekers',
+		notes: '-5% combat frequency / 10 turns / 50 MP',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: false,
+		hc: false,
+		tags: ['misc'],
+		year: 2024
+	},
+	{
+		name: 'Holiday Multitasking',
+		notes: '3 free crafts / day / passive',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: false,
+		hc: false,
+		tags: ['misc', 'marginal'],
+		year: 2024
+	},
+	{
+		name: 'Reindeer Games',
+		notes: '30% combat initiative / passive',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: false,
+		hc: false,
+		tags: ['init'],
+		year: 2024
 	}
 ];
