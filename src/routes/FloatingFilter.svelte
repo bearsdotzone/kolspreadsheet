@@ -155,7 +155,7 @@
     .floating-filter {
         background-color: var(--color-overlay0);
         display: flex;
-        height: calc(100lvh - var(--spacing) * 2);
+        height: calc(100vh - var(--spacing) * 2);
         padding: calc(var(--spacing));
         position: sticky;
         top: 0;
