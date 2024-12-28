@@ -90,7 +90,7 @@
 			<form>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-sources" class="checkbox-filter-sources"
+						<input type="checkbox" id="group-sources" name="group-sources" class="checkbox-filter-sources"
 									 on:change={(x) => {
 								 setAllGroup(SkillFields.SOURCE, x.currentTarget.checked);
 							 }}>
@@ -99,7 +99,7 @@
 					<div class="group-member">
 						{#each Object.entries(SkillSource) as skillSource}
 							<div>
-								<input type="checkbox" id={skillSource[0]} class="checkbox-filter-sources"
+								<input type="checkbox" id={skillSource[0]} name={skillSource[0]} class="checkbox-filter-sources"
 											 bind:checked={skillFilter.source[skillSource[0]]}>
 								<label for={skillSource[0]}>{skillSource[1]}</label>
 							</div>
@@ -108,7 +108,7 @@
 				</div>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-classes" class="checkbox-filter-classes"
+						<input type="checkbox" id="group-classes" name="group-classes" class="checkbox-filter-classes"
 									 on:change={(x) => {
 								 setAllGroup(SkillFields.CLASS, x.currentTarget.checked);
 							 }}>
@@ -117,7 +117,7 @@
 					<div class="group-member">
 						{#each Object.entries(Classes) as classVal}
 							<div>
-								<input type="checkbox" id={classVal[0]} class="checkbox-filter-classes"
+								<input type="checkbox" id={classVal[0]} name={classVal[0]} class="checkbox-filter-classes"
 											 bind:checked={skillFilter.class[classVal[0]]}>
 								<label for={classVal[0]}>{classVal[1]}</label>
 							</div>
@@ -126,7 +126,7 @@
 				</div>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-tags" class="checkbox-filter-tags"
+						<input type="checkbox" id="group-tags" name="group-tags" class="checkbox-filter-tags"
 									 on:change={(x) => {
 								 setAllGroup(SkillFields.TAGS, x.currentTarget.checked);
 							 }}>
@@ -135,7 +135,8 @@
 					<div class="group-member">
 						{#each list_of_tags as tag}
 							<div>
-								<input type="checkbox" id={tag} class="checkbox-filter-tags" bind:checked={skillFilter.tags[tag]}>
+								<input type="checkbox" id={tag} name={tag} class="checkbox-filter-tags"
+											 bind:checked={skillFilter.tags[tag]}>
 								<label for={tag}>{tag}</label>
 								<button on:click={() => {
 							setAllGroup(SkillFields.TAGS, false);
