@@ -81,7 +81,11 @@
 <svelte:head>
 	<title>Bears' KoL Perms Tracker</title>
 	<meta content="Bears' KoL Perms Tracker" name="description" />
-	<meta content="favicon.png" name="og:image" />
+	<meta content="https://bearsdotzone.github.io/kolspreadsheet/favicon.png" property="og:image" />
+	<meta content="Bears' KoL Perms Tracker" property="og:title" />
+	<meta content="website" property="og:type" />
+	<meta content="A glorified spreadsheet tracking permanent skills for a Kingdom of Loathing account."
+				property="og:description" />
 </svelte:head>
 
 <section>
