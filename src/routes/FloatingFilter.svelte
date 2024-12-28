@@ -153,7 +153,7 @@
 
 <style>
     .floating-filter {
-        background-color: var(--color-overlay0);
+        background-color: var(--color-crust);
         display: flex;
         height: calc(100vh - var(--spacing) * 2);
         padding: calc(var(--spacing));
