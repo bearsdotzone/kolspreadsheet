@@ -167,10 +167,6 @@
         overflow: scroll;
     }
 
-    .floating-filter::-webkit-scrollbar {
-        display: none;
-    }
-
     .group-member {
         margin-left: 10px;
     }
