@@ -1635,8 +1635,8 @@ export const all_skills: Skill[] = [
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['misc'],
 		year: 2024
 	},
