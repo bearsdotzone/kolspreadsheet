@@ -558,7 +558,7 @@ export const all_skills: Skill[] = [
 		class: Classes.SAUCEROR,
 		level: 5,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
 		year: null
 	},
@@ -1624,8 +1624,8 @@ export const all_skills: Skill[] = [
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['misc'],
 		year: 2024
 	},
