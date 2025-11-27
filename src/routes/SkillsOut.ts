@@ -1661,5 +1661,38 @@ export const all_skills: Skill[] = [
 		hc: true,
 		tags: ['init'],
 		year: 2024
+	},
+	{
+		name: 'Crimbo Training: Concierge',
+		notes: '+1 familiar weight',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['xp', 'item', 'meat', 'marginal'],
+		year: 2022
+	},
+	{
+		name: 'Crimbo Training: Bartender',
+		notes: '+15% Booze Drops from Monsterst',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['item', 'marginal'],
+		year: 2022
+	},
+	{
+		name: 'Crimbo Training: Night Watchman',
+		notes: 'Slight Spooky Resistance (+1) ',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'marginal'],
+		year: 2022
 	}
 ];
