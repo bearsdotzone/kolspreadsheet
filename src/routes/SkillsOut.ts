@@ -1694,5 +1694,16 @@ export const all_skills: Skill[] = [
 		hc: false,
 		tags: ['combat', 'marginal'],
 		year: 2022
+	},
+	{
+		name: 'Secret Door Awareness',
+		notes: 'scroll of minor invulnerability',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['misc'],
+		year: 2023
 	}
 ];
