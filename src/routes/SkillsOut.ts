@@ -403,7 +403,7 @@ export const all_skills: Skill[] = [
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
-		sc: false,
+		sc: true,
 		hc: false,
 		tags: ['xp', 'tierlist'],
 		year: 2021
@@ -1646,7 +1646,7 @@ export const all_skills: Skill[] = [
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
-		sc: false,
+		sc: true,
 		hc: false,
 		tags: ['misc', 'marginal'],
 		year: 2024
