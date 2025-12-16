@@ -1686,7 +1686,7 @@ export const all_skills: Skill[] = [
 	},
 	{
 		name: 'Crimbo Training: Night Watchman',
-		notes: 'Slight Spooky Resistance (+1) ',
+		notes: 'Slight Spooky Resistance (+1)',
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
@@ -1705,5 +1705,38 @@ export const all_skills: Skill[] = [
 		hc: false,
 		tags: ['misc'],
 		year: 2023
-	}
+	},
+	{
+		name: 'Silent Hunter',
+		notes: '+100% initiative',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['init'],
+		year: 2017
+	},
+	{
+		name: 'Crimbo Training: Coal Taster',
+		notes: 'Slight Hot Resistance (+1)',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'marginal'],
+		year: 2022
+	},
+	{
+		name: 'Shrap',
+		notes: 'Physical combat spell',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'marginal'],
+		year: 2013
+	},
 ];
