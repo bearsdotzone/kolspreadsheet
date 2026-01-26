@@ -865,8 +865,8 @@ export const all_skills: Skill[] = [
 		source: SkillSource.CLASS,
 		class: Classes.SAUCEROR,
 		level: 11,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
 		year: null
 	},
