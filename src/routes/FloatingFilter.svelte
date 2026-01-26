@@ -44,23 +44,23 @@
 
 	function setAllGroup(group: SkillFields, value: boolean) {
 		if (group === SkillFields.TAGS) {
-			list_of_tags.forEach(tag => {
+			list_of_tags.forEach((tag) => {
 				skillFilter.tags[tag] = value;
 			});
 			return;
 		}
 		if (group === SkillFields.CLASS) {
-			Object.keys(Classes).forEach(key => {
+			Object.keys(Classes).forEach((key) => {
 				skillFilter.class[key] = value;
 			});
 			return;
 		}
 		if (group === SkillFields.SOURCE) {
-			Object.keys(SkillSource).forEach(key => {
+			Object.keys(SkillSource).forEach((key) => {
 				skillFilter.source[key] = value;
 			});
 		}
-		let x = (skillFilter[group] as { [key: string]: boolean });
+		let x = skillFilter[group] as { [key: string]: boolean };
 		Object.entries(x).forEach(([key]) => {
 			x[key] = value;
 		});
@@ -69,38 +69,56 @@
 
 <div class="floating-filter">
 	<div class="expand">
-		<button on:click={() => {hideContent = !hideContent}}>
-			{#if hideContent}⫷{:else }⫸{/if}
+		<button
+			on:click={() => {
+				hideContent = !hideContent;
+			}}
+		>
+			{#if hideContent}⫷{:else}⫸{/if}
 		</button>
 	</div>
 	{#if !hideContent}
 		<div class="content">
 			<div>
-				<button on:click={() => {
-			checkAll()
-		}}>
+				<button
+					on:click={() => {
+						checkAll();
+					}}
+				>
 					All
 				</button>
-				<button on:click={() => {
-			uncheckAll()
-		}}>
+				<button
+					on:click={() => {
+						uncheckAll();
+					}}
+				>
 					None
 				</button>
 			</div>
 			<form>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-sources" name="group-sources" class="checkbox-filter-sources"
-									 on:change={(x) => {
-								 setAllGroup(SkillFields.SOURCE, x.currentTarget.checked);
-							 }}>
+						<input
+							type="checkbox"
+							id="group-sources"
+							name="group-sources"
+							class="checkbox-filter-sources"
+							on:change={(x) => {
+								setAllGroup(SkillFields.SOURCE, x.currentTarget.checked);
+							}}
+						/>
 						<label for="group-sources">Sources</label>
 					</div>
 					<div class="group-member">
 						{#each Object.entries(SkillSource) as skillSource}
 							<div>
-								<input type="checkbox" id={skillSource[0]} name={skillSource[0]} class="checkbox-filter-sources"
-											 bind:checked={skillFilter.source[skillSource[0]]}>
+								<input
+									type="checkbox"
+									id={skillSource[0]}
+									name={skillSource[0]}
+									class="checkbox-filter-sources"
+									bind:checked={skillFilter.source[skillSource[0]]}
+								/>
 								<label for={skillSource[0]}>{skillSource[1]}</label>
 							</div>
 						{/each}
@@ -108,17 +126,27 @@
 				</div>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-classes" name="group-classes" class="checkbox-filter-classes"
-									 on:change={(x) => {
-								 setAllGroup(SkillFields.CLASS, x.currentTarget.checked);
-							 }}>
+						<input
+							type="checkbox"
+							id="group-classes"
+							name="group-classes"
+							class="checkbox-filter-classes"
+							on:change={(x) => {
+								setAllGroup(SkillFields.CLASS, x.currentTarget.checked);
+							}}
+						/>
 						<label for="group-classes">Classes</label>
 					</div>
 					<div class="group-member">
 						{#each Object.entries(Classes) as classVal}
 							<div>
-								<input type="checkbox" id={classVal[0]} name={classVal[0]} class="checkbox-filter-classes"
-											 bind:checked={skillFilter.class[classVal[0]]}>
+								<input
+									type="checkbox"
+									id={classVal[0]}
+									name={classVal[0]}
+									class="checkbox-filter-classes"
+									bind:checked={skillFilter.class[classVal[0]]}
+								/>
 								<label for={classVal[0]}>{classVal[1]}</label>
 							</div>
 						{/each}
@@ -126,25 +154,64 @@
 				</div>
 				<div>
 					<div class="group-heading">
-						<input type="checkbox" id="group-tags" name="group-tags" class="checkbox-filter-tags"
-									 on:change={(x) => {
-								 setAllGroup(SkillFields.TAGS, x.currentTarget.checked);
-							 }}>
+						<input
+							type="checkbox"
+							id="group-tags"
+							name="group-tags"
+							class="checkbox-filter-tags"
+							on:change={(x) => {
+								setAllGroup(SkillFields.TAGS, x.currentTarget.checked);
+							}}
+						/>
 						<label for="group-tags">Tags</label>
 					</div>
 					<div class="group-member">
 						{#each list_of_tags as tag}
 							<div>
-								<input type="checkbox" id={tag} name={tag} class="checkbox-filter-tags"
-											 bind:checked={skillFilter.tags[tag]}>
+								<input
+									type="checkbox"
+									id={tag}
+									name={tag}
+									class="checkbox-filter-tags"
+									bind:checked={skillFilter.tags[tag]}
+								/>
 								<label for={tag}>{tag}</label>
-								<button on:click={() => {
-							setAllGroup(SkillFields.TAGS, false);
-						skillFilter.tags[tag] = true;
-						}}>[only]
+								<button
+									on:click={() => {
+										setAllGroup(SkillFields.TAGS, false);
+										skillFilter.tags[tag] = true;
+									}}
+									>[only]
 								</button>
 							</div>
 						{/each}
+					</div>
+				</div>
+				<div>
+					<div class="group-heading">
+						<label for="group-permed">Permed</label>
+					</div>
+					<div class="group-member">
+						<div>
+							<input
+								type="checkbox"
+								id="sc-perm"
+								name="sc-perm"
+								class="checkbox-filter-permed"
+								bind:checked={skillFilter.sc}
+							/>
+							<label for="sc-perm">sc</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="hc-perm"
+								name="hc-perm"
+								class="checkbox-filter-permed"
+								bind:checked={skillFilter.hc}
+							/>
+							<label for="hc-perm">hc</label>
+						</div>
 					</div>
 				</div>
 			</form>
@@ -153,41 +220,41 @@
 </div>
 
 <style>
-    .floating-filter {
-        background-color: var(--color-crust);
-        display: flex;
-        height: calc(100vh - var(--spacing) * 2);
-        padding: calc(var(--spacing));
-        position: sticky;
-        top: 0;
-    }
+	.floating-filter {
+		background-color: var(--color-crust);
+		display: flex;
+		height: calc(100vh - var(--spacing) * 2);
+		padding: calc(var(--spacing));
+		position: sticky;
+		top: 0;
+	}
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        overflow: scroll;
-    }
+	.content {
+		display: flex;
+		flex-direction: column;
+		overflow: scroll;
+	}
 
-    .group-member {
-        margin-left: 10px;
-    }
+	.group-member {
+		margin-left: 10px;
+	}
 
-    .group-member button {
-        background-color: transparent;
-        border: none;
-        font-style: italic;
-        font-weight: normal;
-        text-decoration-line: underline;
-    }
+	.group-member button {
+		background-color: transparent;
+		border: none;
+		font-style: italic;
+		font-weight: normal;
+		text-decoration-line: underline;
+	}
 
-    button {
-        margin: 0;
-    }
+	button {
+		margin: 0;
+	}
 
-    .expand {
-        display: flex;
-        flex-direction: column;
-        height: calc(100vh - var(--spacing) * 2);
-        justify-content: center;
-    }
+	.expand {
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - var(--spacing) * 2);
+		justify-content: center;
+	}
 </style>

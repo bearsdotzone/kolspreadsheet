@@ -57,7 +57,7 @@ export const all_skills: Skill[] = [
 		year: null
 	},
 	{
-		name: 'Smooth Movements',
+		name: 'Smooth Movement',
 		notes: '-5% combat',
 		source: SkillSource.CLASS,
 		class: Classes.DISCO_BANDIT,
@@ -68,7 +68,7 @@ export const all_skills: Skill[] = [
 		year: null
 	},
 	{
-		name: 'Sonata of Sneakiness',
+		name: 'The Sonata of Sneakiness',
 		notes: '-5% combat',
 		source: SkillSource.CLASS,
 		class: Classes.ACCORDION_THIEF,
@@ -282,8 +282,8 @@ export const all_skills: Skill[] = [
 		source: SkillSource.CLASS,
 		class: Classes.SEAL_CLUBBER,
 		level: 7,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['combat', 'tierlist', 'evergreen'],
 		year: null
 	},
@@ -1113,13 +1113,13 @@ export const all_skills: Skill[] = [
 		year: null
 	},
 	{
-		name: 'Thick-skinned',
+		name: 'Thick-Skinned',
 		notes: '10 max HP and MP',
 		source: SkillSource.SKILLBOOK,
 		class: null,
 		level: null,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['mp', 'tierlist', 'evergreen'],
 		year: null
 	},
@@ -1448,8 +1448,8 @@ export const all_skills: Skill[] = [
 		source: SkillSource.CLASS,
 		class: Classes.TURTLE_TAMER,
 		level: 9,
-		sc: false,
-		hc: false,
+		sc: true,
+		hc: true,
 		tags: ['marginal', 'tierlist', 'evergreen'],
 		year: null
 	},
@@ -1614,7 +1614,7 @@ export const all_skills: Skill[] = [
 		class: null,
 		level: null,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['item'],
 		year: 2024
 	},
@@ -1630,7 +1630,7 @@ export const all_skills: Skill[] = [
 		year: 2024
 	},
 	{
-		name: 'Hide from Seekers',
+		name: 'Hide From Seekers',
 		notes: '-5% combat frequency / 10 turns / 50 MP',
 		source: SkillSource.SKILLBOOK,
 		class: null,
@@ -1647,7 +1647,7 @@ export const all_skills: Skill[] = [
 		class: null,
 		level: null,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['misc', 'marginal'],
 		year: 2024
 	},
@@ -1739,4 +1739,213 @@ export const all_skills: Skill[] = [
 		tags: ['combat', 'marginal'],
 		year: 2013
 	},
+	{
+		name: 'Budget Conscious',
+		notes: 'Meat',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['meat', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Acquire Rhinestones',
+		notes: 'Tiny moxie buff',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Carol of the Bulls',
+		notes: 'Weapon damage',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Carol of the Hells',
+		notes: 'Spell damage',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Carol of the Thrills',
+		notes: '+3 Stats Per Fight',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['xp', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Chip on your Shoulder',
+		notes: '+5 PvP fight(s) per day',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['evergreen', 'marginal'],
+		year: null
+	},
+	{
+		name: 'Drinking to Drink',
+		notes: '+1 liver capacity',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['turns', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Eggsplosion',
+		notes: 'Stench spell',
+		source: SkillSource.HOBOPOLIS,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'evergreen', 'marginal'],
+		year: null
+	},
+	{
+		name: 'Gallapagosian Mating Call',
+		notes: 'Adds 1 copy of the monster to the zone until rollover or used on something else.',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['turns'],
+		year: 2018
+	},
+	{
+		name: 'Get Big',
+		notes: 'Muscle +20% Mysticality +20% Moxie +20%',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat'],
+		year: 2018
+	},
+	{
+		name: 'Grease Lightning',
+		notes: 'Sleaze spell',
+		source: SkillSource.HOBOPOLIS,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat'],
+		year: 2018
+	},
+	{
+		name: "Inigo's Incantation of Inspiration",
+		notes: 'Lets you craft things more quickly',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['turns', 'marginal'],
+		year: 2010
+	},
+	{
+		name: 'Inscrutable Gaze',
+		notes: '+10% to all Mysticality Gains',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['xp', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Just the Facts',
+		notes: 'meat',
+		source: SkillSource.IOTM,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['turns'],
+		year: 2018
+	},
+	{
+		name: 'Love Mixology',
+		notes: 'Weird potion',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Master of the Surprising Fist',
+		notes: 'Weapon Damage +10 Damage Reduction: 10 (only with empty hands)',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'marginal'],
+		year: 2011
+	},
+	{
+		name: 'Natural Born Skeleton Killer',
+		notes: '+10% Damage vs. Skeletons',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['combat', 'marginal'],
+		year: 2011
+	},
+	{
+		name: "Paul's Passionate Pop Song",
+		notes: 'Regenerate 4-5 MP per Adventure',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['mp', 'marginal'],
+		year: 2018
+	},
+	{
+		name: 'Vent Rage Gland',
+		notes: 'Passive damage',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['combat', 'marginal'],
+		year: 2009
+	}
 ];
