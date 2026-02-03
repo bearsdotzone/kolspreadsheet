@@ -1042,7 +1042,7 @@ export const all_skills: Skill[] = [
 		class: Classes.SEAL_CLUBBER,
 		level: 13,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['marginal', 'tierlist', 'evergreen'],
 		year: null
 	},
@@ -1947,5 +1947,16 @@ export const all_skills: Skill[] = [
 		hc: true,
 		tags: ['combat', 'marginal'],
 		year: 2009
+	},
+	{
+		name: 'Only Dogs Love a Drunken Sailor',
+		notes: '5 familiar weight / 10 turns',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: true,
+		tags: ['xp', 'item', 'meat'],
+		year: 2025
 	}
 ];
