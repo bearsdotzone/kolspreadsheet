@@ -1,39 +1,12 @@
+import { pastamancerSkills } from './skills/Pastamancer';
+import { questSkills } from './skills/Quests';
+import { sealClubberSkills } from './skills/SealClubber';
 import { Classes, type Skill, SkillSource } from './SkillType';
 
 export const all_skills: Skill[] = [
-	{
-		name: 'Blubber Up',
-		notes: '5 moxie / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 3,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Cannelloni Cocoon',
-		notes: 'Heal 1,000 HP',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 12,
-		sc: true,
-		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Pastamastery',
-		notes: 'Summons 3 dry noodles',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 5,
-		sc: true,
-		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
-		year: null
-	},
+	...sealClubberSkills,
+	...pastamancerSkills,
+	...questSkills,
 	{
 		name: 'Advanced Cocktailcrafting',
 		notes: 'Summons 3 AC ingredients',
@@ -42,7 +15,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -53,7 +26,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -64,7 +37,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: true,
 		hc: true,
-		tags: ['misc', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -75,7 +48,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: true,
 		hc: true,
-		tags: ['misc', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -86,7 +59,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
+		tags: ['turns', 'misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -97,7 +70,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -108,7 +81,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
+		tags: ['turns', 'misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -119,7 +92,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['turns', 'tierlist'],
+		tags: ['turns'],
 		year: 2020
 	},
 	{
@@ -130,7 +103,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['turns', 'tierlist'],
+		tags: ['turns'],
 		year: 2020
 	},
 	{
@@ -141,7 +114,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -152,7 +125,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -163,7 +136,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['misc', 'tierlist'],
+		tags: ['misc'],
 		year: 2020
 	},
 	{
@@ -174,7 +147,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: true,
 		hc: true,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -185,7 +158,7 @@ export const all_skills: Skill[] = [
 		level: 7,
 		sc: true,
 		hc: true,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -196,18 +169,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Super-Advanced Meatsmithing',
-		notes: 'Allows you to smith more stuff',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 5,
-		sc: false,
-		hc: false,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['familiar', 'xp', 'item', 'meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -218,18 +180,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: true,
 		hc: true,
-		tags: ['misc', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Leash of Linguini',
-		notes: '5 familiar weight / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 11,
-		sc: true,
-		hc: true,
-		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -240,7 +191,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'item', 'meat', 'tierlist', 'evergreen'],
+		tags: ['familiar', 'xp', 'item', 'meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -251,18 +202,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'misc', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Transcendental Noodlecraft',
-		notes: 'Summons 2 dry noodles, unlocks recipes',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 15,
-		sc: true,
-		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -273,18 +213,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: true,
 		hc: true,
-		tags: ['turns', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Hide of the Walrus',
-		notes: '50 damage absorption',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 7,
-		sc: true,
-		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -295,7 +224,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['turns', 'tierlist', 'evergreen'],
+		tags: ['turns', 'evergreen'],
 		year: null
 	},
 	{
@@ -306,7 +235,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'combat', 'tierlist', 'evergreen'],
+		tags: ['xp', 'combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -317,7 +246,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: false,
 		hc: false,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -328,7 +257,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -339,7 +268,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: false,
 		hc: false,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -350,7 +279,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -361,7 +290,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['xp', 'tierlist'],
+		tags: ['xp'],
 		year: 2020
 	},
 	{
@@ -372,18 +301,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Claws of the Walrus',
-		notes: '7 weapon damage',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 8,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -394,7 +312,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: false,
 		hc: false,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['xp', 'evergreen'],
 		year: null
 	},
 	{
@@ -405,7 +323,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: false,
-		tags: ['xp', 'tierlist'],
+		tags: ['xp'],
 		year: 2021
 	},
 	{
@@ -416,7 +334,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -427,7 +345,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -438,7 +356,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -449,7 +367,7 @@ export const all_skills: Skill[] = [
 		level: 10,
 		sc: false,
 		hc: false,
-		tags: ['item', 'meat', 'tierlist', 'evergreen'],
+		tags: ['item', 'meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -460,18 +378,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['item', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Bind Spice Ghost',
-		notes: '5% item / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 15,
-		sc: false,
-		hc: false,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -482,7 +389,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: false,
 		hc: false,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -493,7 +400,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['item', 'tierlist', 'evergreen'],
+		tags: ['item', 'evergreen'],
 		year: null
 	},
 	{
@@ -504,7 +411,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['item', 'tierlist'],
+		tags: ['item'],
 		year: 2020
 	},
 	{
@@ -515,7 +422,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: true,
 		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -526,7 +433,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -537,7 +444,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -548,7 +455,7 @@ export const all_skills: Skill[] = [
 		level: 1,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -559,18 +466,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: true,
 		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Stuffed Mortar Shell',
-		notes: 'Random damage spell',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 8,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -581,18 +477,7 @@ export const all_skills: Skill[] = [
 		level: 2,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Tongue of the Walrus',
-		notes: 'Removes beaten up and heals 30-40',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 9,
-		sc: true,
-		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -603,7 +488,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -614,7 +499,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'misc', 'tierlist', 'evergreen'],
+		tags: ['combat', 'misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -625,7 +510,7 @@ export const all_skills: Skill[] = [
 		level: 4,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -636,18 +521,7 @@ export const all_skills: Skill[] = [
 		level: 4,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Subtle and Quick to Anger',
-		notes: '10% spell damage',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 12,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'misc', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -658,7 +532,7 @@ export const all_skills: Skill[] = [
 		level: 10,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -669,18 +543,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Spirit of Ravioli',
-		notes: '25% max HP',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 9,
-		sc: true,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -691,29 +554,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Lunging Thrust-Smack',
-		notes: 'Triple weapon damage plus bonus damage if a Seal Clubber',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 10,
-		sc: true,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Entangling Noodles',
-		notes: 'Staggers and delevels',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 2,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -724,7 +565,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -735,7 +576,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -746,18 +587,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Rage of the Raindeer',
-		notes: '10% muscle and 10 weapon damage / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 11,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -768,18 +598,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Tolerance of the Kitchen',
-		notes: '2 hot res',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 13,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'misc', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -790,18 +609,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Shield of the Pastalord',
-		notes: 'Reduce physical damage by 10% or 30% if a pastamancer / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 8,
-		sc: false,
-		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -812,7 +620,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -823,7 +631,7 @@ export const all_skills: Skill[] = [
 		level: 2,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -834,7 +642,7 @@ export const all_skills: Skill[] = [
 		level: 4,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -845,7 +653,7 @@ export const all_skills: Skill[] = [
 		level: 7,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -856,7 +664,7 @@ export const all_skills: Skill[] = [
 		level: 14,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'mp', 'tierlist', 'evergreen'],
+		tags: ['combat', 'mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -867,7 +675,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: true,
 		hc: true,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -878,18 +686,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Double-Fisted Skull Smashing',
-		notes: 'Dual wield weapons',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 12,
-		sc: true,
-		hc: true,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -900,7 +697,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -911,7 +708,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -922,7 +719,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -933,7 +730,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -944,7 +741,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -955,7 +752,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -966,18 +763,7 @@ export const all_skills: Skill[] = [
 		level: 13,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Northern Exposure',
-		notes: '2 cold res',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 13,
-		sc: true,
-		hc: true,
-		tags: ['combat', 'misc', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -988,7 +774,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -999,7 +785,7 @@ export const all_skills: Skill[] = [
 		level: 10,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1010,7 +796,7 @@ export const all_skills: Skill[] = [
 		level: 10,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1021,7 +807,7 @@ export const all_skills: Skill[] = [
 		level: 9,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1032,18 +818,7 @@ export const all_skills: Skill[] = [
 		level: 3,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Northern Explosion',
-		notes: 'A smack that is all cold damage',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 13,
-		sc: true,
-		hc: true,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1054,7 +829,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: false,
 		hc: false,
-		tags: ['combat', 'tierlist', 'evergreen'],
+		tags: ['combat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1065,7 +840,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['misc', 'tierlist'],
+		tags: ['misc'],
 		year: 2020
 	},
 	{
@@ -1076,7 +851,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: true,
 		hc: true,
-		tags: ['misc', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -1087,7 +862,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: false,
-		tags: ['misc', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -1098,18 +873,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['misc', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Flavour of Magic',
-		notes: 'Tune pastamancer skills, 10 spell damage',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 14,
-		sc: false,
-		hc: false,
-		tags: ['misc', 'tierlist', 'evergreen'],
+		tags: ['misc', 'evergreen'],
 		year: null
 	},
 	{
@@ -1120,7 +884,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1131,7 +895,7 @@ export const all_skills: Skill[] = [
 		level: 2,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1142,7 +906,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1153,7 +917,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1164,7 +928,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1175,7 +939,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1186,7 +950,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'tierlist', 'evergreen'],
+		tags: ['mp', 'evergreen'],
 		year: null
 	},
 	{
@@ -1197,7 +961,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1208,7 +972,7 @@ export const all_skills: Skill[] = [
 		level: 6,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1219,7 +983,7 @@ export const all_skills: Skill[] = [
 		level: 4,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1230,7 +994,7 @@ export const all_skills: Skill[] = [
 		level: 7,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1241,7 +1005,7 @@ export const all_skills: Skill[] = [
 		level: 3,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1252,7 +1016,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1263,7 +1027,7 @@ export const all_skills: Skill[] = [
 		level: 15,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
 	{
@@ -1274,42 +1038,10 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['meat', 'evergreen'],
 		year: null
 	},
-	{
-		name: 'Musk of the Moose',
-		notes: '5% combat',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 14,
-		sc: true,
-		hc: true,
-		tags: ['misc', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Bind Lasagmbie',
-		notes: '10% meat / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 13,
-		sc: false,
-		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Springy Fusili',
-		notes: '40% initiative / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 6,
-		sc: false,
-		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
-		year: null
-	},
+
 	{
 		name: 'Overdeveloped Sense of Self Preservation',
 		notes: '20% initiative',
@@ -1318,7 +1050,7 @@ export const all_skills: Skill[] = [
 		level: 2,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1329,7 +1061,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1340,7 +1072,7 @@ export const all_skills: Skill[] = [
 		level: 3,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1351,7 +1083,7 @@ export const all_skills: Skill[] = [
 		level: 8,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1362,7 +1094,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1373,18 +1105,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Bind Angel Hair Wisp',
-		notes: '10% initiative / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.PASTAMANCER,
-		level: 7,
-		sc: false,
-		hc: false,
-		tags: ['init', 'tierlist', 'evergreen'],
+		tags: ['init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1395,7 +1116,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: false,
 		hc: false,
-		tags: ['mp', 'init', 'tierlist', 'evergreen'],
+		tags: ['mp', 'init', 'evergreen'],
 		year: null
 	},
 	{
@@ -1406,7 +1127,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: true,
 		hc: true,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1417,7 +1138,7 @@ export const all_skills: Skill[] = [
 		level: 3,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1428,7 +1149,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1439,7 +1160,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1450,7 +1171,7 @@ export const all_skills: Skill[] = [
 		level: 9,
 		sc: true,
 		hc: true,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['familiar', 'marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1461,7 +1182,7 @@ export const all_skills: Skill[] = [
 		level: 3,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1472,7 +1193,7 @@ export const all_skills: Skill[] = [
 		level: 11,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1483,18 +1204,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Pride of the Puffin',
-		notes: '10 ML / 10 turns',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 15,
-		sc: true,
-		hc: true,
-		tags: ['xp', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1505,7 +1215,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1516,7 +1226,7 @@ export const all_skills: Skill[] = [
 		level: 10,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1527,18 +1237,7 @@ export const all_skills: Skill[] = [
 		level: 12,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
-		year: null
-	},
-	{
-		name: 'Pulverize',
-		notes: 'Pulverize things with a meat-tenderizing hammer',
-		source: SkillSource.CLASS,
-		class: Classes.SEAL_CLUBBER,
-		level: 15,
-		sc: true,
-		hc: false,
-		tags: ['meat', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1549,7 +1248,7 @@ export const all_skills: Skill[] = [
 		level: 5,
 		sc: true,
 		hc: false,
-		tags: ['marginal', 'tierlist', 'evergreen'],
+		tags: ['marginal', 'evergreen'],
 		year: null
 	},
 	{
@@ -1560,7 +1259,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist'],
+		tags: ['marginal'],
 		year: 2020
 	},
 	{
@@ -1571,7 +1270,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: false,
 		hc: false,
-		tags: ['marginal', 'tierlist'],
+		tags: ['marginal'],
 		year: 2020
 	},
 	{
@@ -1670,7 +1369,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: false,
-		tags: ['xp', 'item', 'meat', 'marginal'],
+		tags: ['familiar', 'xp', 'item', 'meat', 'marginal'],
 		year: 2022
 	},
 	{
@@ -1956,7 +1655,7 @@ export const all_skills: Skill[] = [
 		level: null,
 		sc: true,
 		hc: true,
-		tags: ['xp', 'item', 'meat'],
+		tags: ['familiar', 'xp', 'item', 'meat'],
 		year: 2025
 	}
 ];

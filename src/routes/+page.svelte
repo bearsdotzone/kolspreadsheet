@@ -31,13 +31,13 @@
 		tags: {
 			combat: true,
 			evergreen: true,
+			familiar: true,
 			init: true,
 			item: true,
 			marginal: true,
 			meat: true,
 			misc: true,
 			mp: true,
-			tierlist: true,
 			turns: true,
 			xp: true
 		},

@@ -29,6 +29,19 @@ export enum SkillFields {
 	YEAR = 'year'
 }
 
+export type tags =
+	| 'combat'
+	| 'evergreen'
+	| 'familiar'
+	| 'init'
+	| 'item'
+	| 'marginal'
+	| 'meat'
+	| 'misc'
+	| 'mp'
+	| 'turns'
+	| 'xp';
+
 export type Skill = {
 	name: string;
 	notes: string;
@@ -37,7 +50,7 @@ export type Skill = {
 	level: number | null;
 	sc: boolean;
 	hc: boolean;
-	tags: string[];
+	tags: tags[];
 	year: number | null;
 };
 
@@ -118,7 +131,6 @@ export const filterClassNone: SkillFilter = {
 		meat: true,
 		misc: true,
 		mp: true,
-		tierlist: true,
 		turns: true,
 		xp: true
 	},
