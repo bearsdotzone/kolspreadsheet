@@ -8,7 +8,7 @@ export const questSkills: Skill[] = [
 		class: null,
 		level: null,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['evergreen'],
 		year: null
 	},
