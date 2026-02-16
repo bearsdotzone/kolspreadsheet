@@ -1141,7 +1141,7 @@ export const all_skills: Skill[] = [
 		class: null,
 		level: null,
 		sc: true,
-		hc: false,
+		hc: true,
 		tags: ['familiar', 'xp', 'item', 'meat', 'marginal'],
 		year: 2022
 	},
