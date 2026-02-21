@@ -34,7 +34,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '23.x'
+          node-version: '24.x'
       # This  command is similar to npm help install, except it's meant to be used in automated environments such as test platforms, continuous integration, and deployment -- or any situation where you want to make sure you're doing a clean install of your dependencies.
       - run: npm ci
       - run: npm run build --if-present
