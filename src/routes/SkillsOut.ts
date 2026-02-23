@@ -1430,5 +1430,16 @@ export const all_skills: Skill[] = [
 		hc: true,
 		tags: ['familiar', 'xp', 'item', 'meat'],
 		year: 2025
+	},
+	{
+		name: `Who's Going to Pay This Drunken Sailor?`,
+		notes: '25% item / 10 turns',
+		source: SkillSource.SKILLBOOK,
+		class: null,
+		level: null,
+		sc: true,
+		hc: false,
+		tags: ['item'],
+		year: 2025
 	}
 ];
