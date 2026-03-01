@@ -216,7 +216,7 @@ export const accordionThiefSkills: Skill[] = [
 		source: SkillSource.CLASS,
 		class: Classes.ACCORDION_THIEF,
 		level: 10,
-		sc: false,
+		sc: true,
 		hc: false,
 		tags: ['item', 'meat', 'evergreen'],
 		year: null
