@@ -112,6 +112,17 @@ export const pastamancerSkills: Skill[] = [
 		year: null
 	},
 	{
+		name: 'Spirit of Rigatoni',
+		notes: 'Lets you equip Chefstaves',
+		source: SkillSource.CLASS,
+		class: Classes.PASTAMANCER,
+		level: 7,
+		sc: true,
+		hc: false,
+		tags: ['marginal'],
+		year: null
+	},
+	{
 		name: 'Springy Fusili',
 		notes: '40% initiative / 10 turns',
 		source: SkillSource.CLASS,
