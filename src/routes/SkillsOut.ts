@@ -3,6 +3,7 @@ import { hobopolisSkills } from './skills/Hobopolis';
 import { pastamancerSkills } from './skills/Pastamancer';
 import { questSkills } from './skills/Quests';
 import { sealClubberSkills } from './skills/SealClubber';
+import { skillBookSkills } from './skills/SkillBooks';
 import { Classes, type Skill, SkillSource } from './SkillType';
 
 export const all_skills: Skill[] = [
@@ -11,6 +12,7 @@ export const all_skills: Skill[] = [
 	...pastamancerSkills,
 	...questSkills,
 	...sealClubberSkills,
+	...skillBookSkills,
 	{
 		name: 'Smooth Movement',
 		notes: '-5% combat',
